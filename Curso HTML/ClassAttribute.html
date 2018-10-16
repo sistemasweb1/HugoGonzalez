@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Style all elements with the class name "city" */
+            .city{
+                background-color: tomato;
+                color: white;
+                padding: 10px
+            }
+            
+            .main{
+                text-align: center;
+            }
+            
+            /* Style the element with the id "myHeader" */
+            #myHeader{
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+        </style>
+        
+        <a href="#C4">Jump to Chapter 4</a>
+        <a href="html_demo.html#C4"></a>
+        
+        
+    </head>
+    
+    <body>
+        <h2 class="city main">London</h2>
+        <p>London is the capital of England</p>
+        
+        <br><br>
+        <h2 class="city">Paris</h2>
+        <p class="city">Paris is the capital of France</p>
+        
+        <br><br>
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo is the capital of Japan</p>
+        
+        <br><br>
+        <h2>Using the clas attribute in JavaScript</h2>
+        <p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+        
+        <button onclick="myFunction()">Hide elements</button>
+        
+        <script>
+            function myFunction(){
+                var x = document.getElementsByClassName("city");
+                for(var i=0; i<x.length; i++){
+                    x[i].style.display = "none";
+                }
+            }
+        </script>
+        
+        <br><br>
+        
+        <!-- A unique element -->
+        <h1 id="myHeader">Hello World</h1>
+        
+        <!-- Multiple similar elements -->
+        <h2 class="city">London</h2>
+        <p>London is the capital of England.</p>
+        
+        <h2 class="city">Paris</h2>
+        <p>Paris is the capital of France.</p>
+        
+        <br><br>
+        <button onclick="displayResult()">Change text</button>
+        
+        <script>
+            function displayResult(){
+                document.getElementById("myHeader").innerHTML = "Have a nice day!";
+            }
+        </script>
+        
+        <br><br>
+        <h2 id="C4">Chapter 4</h2>
+        
+        <br><br>
+        <iframe src="Aguacate.gif" height="200" width="300"></iframe>
+        
+        <iframe src="Aguacate.gif" style="height: 200px; width: 300px"></iframe>
+        
+        <br><br>
+        <iframe src="Aguacate.gif" style="border: none;"></iframe>
+        
+        <iframe src="Aguacate.gif" style="border: 2px solid red;"></iframe>
+        
+        <br><br>
+        <iframe src="Aguacate.gif" name="iframe_a"></iframe>
+        
+        <p><a href="https://www.facebook.com" target="iframe_a">W3Schools</a></p>
+        
+    </body>
+</html>

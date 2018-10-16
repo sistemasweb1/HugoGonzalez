@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+                width: 100%;
+            }
+        </style>
+    </head>
+    
+    <body style="background-image: url(doge.jpg)">
+        <img src="Taco.jpg" alt="Taco feliz" width="128" height="128">
+        
+        <img src="Taco.jpg" alt="Taco feliz" style="width: 128px; height: 128px;">
+        
+        <img src="C:\Cactus.jpg" alt="Skull" style="width: 128px; height: 128px;">
+        
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Scools" style="width: 128px; height: 128px;">
+        
+        <img src="Aguacate.gif" alt="Aguacate" style="width: 100px;height: 100px;">
+        
+        <a href="https://www.facebook.com">
+            <img src="fb.png" alt="Facebook page" style="width: 42px; height: 42px; border: 0;">
+        </a>
+        
+        <!-- Hacer una imagen flotante hacie un lado -->
+        <br><br>
+        
+        <p>
+            <img src="Aguacate.gif" alt="Aguacatito" style="float: right; width: 50px; height: 50px">
+            The image will float to the right of the text.
+        </p>
+        
+        <p>
+            <img src="Aguacate.gif" alt="Aguacatito" style="float: left; width: 50px; height: 50px">
+            The image will float to the left of the text.
+        </p>
+        
+        <!-- Hacer clickeables ciertas areas de una imagen -->
+        <br>
+        
+        <img src="portal.jpg" alt="portal" style="width: auto; height: auto" usemap="#workmap">
+        
+        <map name="workmap">
+            <area shape="rect" coords="363,72,398,128" alt="Computer" href="https://www.google.com/">
+            
+            <area shape="circle" coords="132, 99, 40" alt="School" href="https://www.w3schools.com/">
+        </map>
+        
+        <p style="background-image: url( fb.png)">
+            Este es un texto con una imagen de fondo.
+            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit ligula ut erat hendrerit ultricies. Fusce eu eros metus. Suspendisse justo est, dignissim sit amet quam ut, pretium gravida tortor. Sed quis euismod ipsum. Proin facilisis pretium consequat. Suspendisse semper quam sit amet tortor sollicitudin vulputate. Fusce sagittis, risus eget pulvinar hendrerit, ipsum nunc suscipit lectus, vitae convallis odio felis ultrices turpis. Aliquam sed imperdiet purus. Etiam nec leo a augue scelerisque pellentesque. Nulla ornare, turpis sollicitudin consectetur posuere, ligula augue tincidunt justo, at semper sem turpis sit amet augue. Nulla vel blandit nisi. Sed rutrum eu velit sit amet varius. Nullam varius ultrices quam interdum sagittis. Aenean sodales dignissim sem, eu auctor justo pulvinar et.<br>
+            
+            Phasellus aliquam malesuada condimentum. Phasellus semper quam viverra fringilla dignissim. Quisque finibus leo quis neque venenatis mattis. Etiam mauris orci, aliquam convallis libero quis, tincidunt semper purus. Phasellus sollicitudin maximus eleifend. Curabitur aliquam orci nec sem dictum, at hendrerit nulla imperdiet. Nulla facilisi. Proin sed nibh sem. Morbi fermentum sed quam eu pharetra.<br>
+            
+            In convallis mauris ex, vel mollis velit luctus vel. Morbi quis nulla tempus, pretium ante elementum, tincidunt tellus. Fusce nec leo lorem. Ut vehicula elit ipsum, a eleifend felis pulvinar vel. Nulla facilisi. Etiam hendrerit mauris eu mauris aliquam molestie. Ut eget iaculis mi. Integer vel consequat erat. Aliquam consequat lorem odio, quis dignissim nisi auctor eget. Sed ultricies interdum tortor vel feugiat. In hac habitasse platea dictumst. Proin tempor nibh vitae nibh porta viverra. Mauris elementum sem eu neque mattis mollis.<br>
+            
+            Donec tincidunt velit vel ligula volutpat, ac bibendum velit pellentesque. Suspendisse fermentum mauris magna, non suscipit libero venenatis et. Mauris venenatis lobortis facilisis. Vivamus vulputate, dui et finibus posuere, orci risus fringilla ex, et dictum lacus urna non nulla. Quisque nisi tortor, cursus sit amet risus fermentum, maximus posuere lectus. Praesent commodo leo augue, ut porta turpis placerat a. Nullam eu suscipit arcu, sit amet convallis libero. Donec nec tortor risus. Phasellus et lobortis massa. Quisque vitae malesuada lacus, at lobortis felis. Phasellus in sagittis metus. Duis aliquam venenatis mauris, ac sagittis dolor venenatis id. Integer nec nisl a magna condimentum consectetur sit amet a diam.<br>
+            
+            Donec at elit nec velit egestas tincidunt. Phasellus a congue nisi. Aliquam in sem volutpat, imperdiet nibh non, porta eros. Phasellus a volutpat magna. Curabitur vitae tellus nec lectus fermentum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut interdum odio. Donec nec est lacus.<br>
+        </p>
+        
+        <picture>
+            <source media="(min-width: 650px)" srcset="doge.jpg">
+            <source media="(min-width: 465px)" srcset="fb.png">
+            <img src="Taco.jpg" alt="imagenes locas" style="width: auto;">
+        </picture>
+        
+        
+    </body>
+</html>

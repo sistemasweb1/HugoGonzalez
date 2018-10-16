@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .left{
+                background-color: dodgerblue;
+                padding: 20px;
+                float: left;
+                width: 20%; /* The width is 20%, by default */
+            }
+            
+            .main{
+                background-color: lightgray;
+                padding: 20px;
+                float: left;
+                width: 60%; /* The width is 60%, by default*/
+            }
+            
+            .right{
+                background-color: limegreen;
+                padding: 20%;
+                float: left;
+                width: 20%; /* The width is 20%, by default*/
+            }
+            
+            /*Use a media query to add a breakpint at 800px: */
+            @media screen and (max-width: 800px){
+                .left, .main, .right{
+                    width: 100%; /*The width is 100%, when the viewport is 800px or smaller*/
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <img src="doge.jpg" style="width: 100%;">
+        
+        <img src="doge.jpg" style="max-width: 100%; height: auto">
+        
+        <picture>
+            <source srcset="taco.jpg" media="(max-width: 600px)"></source>
+            <source srcset="fb.png" media="(max-width: 1500px)"></source>
+            <source srcset="portal.jpg"></source>
+            <img src="Aguacate.gif" alt="Awakate">
+        </picture>
+        
+        <br><br>
+        <h1 style="font-size: 10vw">Hello World</h1>
+        
+        <br><br>
+        <h2>Media Queries</h2>
+        <p>Resize the bowser window</p>
+        
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame</p>
+        
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+        
+        <div class="main">
+            <p>Main Content</p>
+        </div>
+        
+        <div class="right">
+            <p>Right Content</p>
+        </div>
+        
+    </body>
+</html>
