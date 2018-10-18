@@ -1,0 +1,93 @@
+/*Se aplica a todo*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Lo que se aplica a etiquetas*/
+body{
+    font-family: 'Lobster', cursive;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+}
+
+h2{
+
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+    background-color: black;
+    padding: 10px;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*********************************************/
+/* Elementos de listas*/
+#lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.textolista{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.textolista:hover{
+    background-color: dimgray;
+}
+
+.item{
+    float: left;
+}
+
+.contenidolista{
+    list-style-type: none;
+}
+
+/***********************************************/
+/*Imagen de cabecera*/
+.cabecera{
+    background-image: url(images/sombrero.jpg);
+    width: 100%;
+    height: 80vh;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Imagen del logo*/
+.logo{
+    margin: auto;
+    display: block;
+    padding-top: 100px;
+}
+
+/*************************************************/
+.contenido{
+    margin: 35px;
+    align-content: center;
+    /*background-color: fuchsia;*/
+}
+
+.elementos{
+    border: 10px;
+    border-color: green;
+}
