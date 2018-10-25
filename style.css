@@ -9,6 +9,12 @@ body{
     font-family: 'Lobster', cursive;
 }
 
+p{
+    font-family: 'K2D', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
 /*Se aplica solo al menu de navegacion*/
 nav{
     position: absolute;
@@ -125,7 +131,7 @@ footer{
 }
 
 .elemento:hover{
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .foto{
@@ -154,6 +160,13 @@ footer{
     text-align: center;
     margin: 20px;
 }
+
+/*********************************************/
+/* texto pie de pagina*/
+.foot{
+    font-family: 'Lobster', cursive;
+}
+
 
 /*************************************************/
 /*SOCIAL MEDIA BUTTONS*/
