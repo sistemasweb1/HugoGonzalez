@@ -127,7 +127,6 @@ footer{
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    
 }
 
 .elemento:hover{
@@ -139,7 +138,6 @@ footer{
 
     display: flex;
     align-items: center;
-    display: flex;
     justify-content: center;
 }
 
@@ -159,6 +157,23 @@ footer{
 .textocontenido{
     text-align: center;
     margin: 20px;
+}
+
+/*********************************************/
+/* pagina de resultados*/
+
+.elementoresultado{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.galeriaresultado{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 /*********************************************/
