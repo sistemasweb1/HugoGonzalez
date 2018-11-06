@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        
+        <title>El loco JavaScript</title>
+        
+        <script>
+            function myFunction(){
+                document.getElementById("demo6").innerHTML = "Y ahora cambio!!! This is a brujeria :v"
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click ME!!!!</button>
+        <br>
+        <br>
+        <br>
+        
+        <h2>What Can JavaScript Do?</h2>
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn ON the light!!!!!</button>
+        
+        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px">
+        
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn OFF the light :'v</button>
+        <br>
+        <br>
+        <br>
+        
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo2">JavaScript can change the style of an HTML element</p>
+        
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">CLICK ME NOW!!!!</button>
+        <br>
+        <br>
+        <br>
+        
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo3">JavaScript can hide elements.</p>
+        
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'">CLICK yeah! :v</button>
+        <br>
+        <br>
+        <br>
+        
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo4" style="display: none">JavaScript can show hidden HTML elements.</p>
+        
+        <button type="button" onclick="document.getElementById('demo4').style.display='block'">I can see the future, just click me!</button>
+        <br>
+        <br>
+        <br>
+        
+        <h2>JavaScript in Body</h2>
+        <p id="demo5"></p>
+        
+        <script>
+            document.getElementById("demo5").innerHTML = "My First JavaScript yey!!!";
+        </script>
+        <br>
+        <br>
+        <br>
+        
+        <h2>JavaScript in Head</h2>
+        <p id="demo6">Esto es un parrafo simplon y sin chiste</p>
+        
+        <button type="button" onclick="myFunction()">Intenta pucharme</button>
+        <br>
+        <br>
+        <br>
+        
+        <h2>JavaScript in Body</h2>
+        <p id="demo7">Un parrafillo chicolillo</p>
+        
+        <button type="button" onclick="myFunction2()">Intentalo, no me dejes sin tu amorts</button>
+        
+        <script>
+            function myFunction2(){
+                document.getElementById("demo7").innerHTML = "Un parrafo nuevo, cambiado y renovado, que no le teme a la vida"
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        
+        <h2>External JavaScript</h2>
+        <p id="demo8">Un parrafolio sensualonio</p>
+        
+        <button type="button" onclick="myExternalFunction()">Cambia al sensual parrafo</button>
+        
+        <script src="intro.js"></script>
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        
+        <footer>
+            
+        </footer>
+    </body>
+</html>
