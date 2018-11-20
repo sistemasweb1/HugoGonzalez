@@ -218,7 +218,7 @@ footer{
 /*************************************************/
 /*GALLEY ELEMENT*/
 
-/*Position the image container (needed to position the left and rigth arrows)*/
+/*Position the image container (needed to position the left and right arrows)*/
 .container{
     position: relative;
 }
@@ -233,7 +233,7 @@ footer{
     cursor: pointer;
 }
 
-/*Next & Previous buttons*/
+/*Next & previous buttons*/
 .prev, .next{
     cursor: pointer;
     position: absolute;
@@ -241,7 +241,7 @@ footer{
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: gray;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -250,18 +250,28 @@ footer{
 }
 
 /*Position the "next button" to the right*/
-.next{
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /*On hover, add a black background color with a little bit see-through*/
 .prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+/*Number text (1/3 etc)*/
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*Container for image text*/
 .caption-container{
-    text-align-last: center;
+    text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
@@ -279,7 +289,7 @@ footer{
     width: 16.66%;
 }
 
-/*Add a transparency effect for thumnail images*/
+/*Add a transparency effect for thumbnail images*/
 .demo{
     opacity: 0.6;
 }
@@ -287,5 +297,3 @@ footer{
 .active, .demo:hover{
     opacity: 1;
 }
-
-/*Te falta agregar el JS*/
