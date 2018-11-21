@@ -157,3 +157,32 @@ function showElements(n){
     text += "<ul>";
     return text;
 }
+
+/*************************************************/
+//Esto ayuda a mostrar informacion diferente en la misma pagina
+
+
+/*************************************************/
+//Transparencia de la informacion
+
+function transparencia(){
+    
+    if(document.getElementById("informacion").style.opacity.value == 1){
+        document.getElementById("informacion").style.opacity = 0.3;
+    }
+    
+    
+    /*
+    if(esTransparente){
+        document.getElementById("informacion").style.opacity = 0.3;
+        esTransparente = true;
+    }else{
+        document.getElementById("informacion").style.opacity = 1;
+        esTransparente = false;
+    }*/
+    
+    
+    
+    
+    
+}
