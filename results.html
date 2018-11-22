@@ -13,7 +13,7 @@
         <title>Renta de vestuario</title>
     </head>
     
-    <body>
+    <body onload="change(0)">
         
         <nav>
             <ul id="lista">
@@ -34,28 +34,65 @@
         <!-- Container for the image gallery -->
         <div class="container">
             
-            <h2>Texto</h2>
+            <!-- Nombre del estado -->
+            <h2 id="nombreEstado">Texto</h2>
             
             <!-- Full-width images with numer text -->
             <div>
+                <!-- Imagen -->
                 <div class="mySlides">
                     <img src="images/Aguascalientes%20-%20Hombre.png" style="width: 100%">
                 </div>
                 
-
+                <!-- Imagen -->
                 <div class="mySlides">
                     <img src="images/Aguascalientes%20-%20Mujer.png" style="width: 100%">
                 </div>
 
-
+                <!-- Imagen -->
                 <div class="mySlides">
                     <img src="images/Baja%20California%20-%20Hombre.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Baja%20California%20-%20Mujer.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Baja%20California%20Sur%20-%20Hombre.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Baja%20California%20Sur%20-%20Mujer.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Campeche%20-%20Hombre.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Campeche%20-%20Mujer.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Chiapas%20-%20Hombre.png" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Chiapas%20-%20Mujer.png" style="width: 100%">
                 </div>
             </div>
             
             <!-- Informacion del vestuario -->
             <div id="informacion" class="text-block" onclick="transparencia()">
-                <h3 id="caption">Esto es un titulo</h3>
+                <h3 id="caption">Información</h3>
                 <p id="textoResultado"></p>
             </div>   
             
@@ -65,17 +102,56 @@
             </div>
             
             <!-- Thumbnail images -->
+            <!-- Tiene que haber la misma cantidad de imagenes que de Tumbnails -->
             <div class="row">
+                <!-- Imagen -->
                 <div class="column">
                     <img class="demo cursor" src="images/Aguascalientes%20-%20Hombre.png" style="width: 100%" onclick="currentSlide(1)" alt="Aguascalientes hombre">
                 </div>
                 
+                <!-- Imagen -->
                 <div class="column">
                    <img class="demo cursor" src="images/Aguascalientes%20-%20Mujer.png" style="width: 100%" onclick="currentSlide(2)" alt="Aguascalientes Mujer">
                 </div>
                 
+                <!-- Imagen -->
                 <div class="column">
                    <img class="demo cursor" src="images/Baja%20California%20-%20Hombre.png" style="width: 100%" onclick="currentSlide(3)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Baja%20California%20-%20Mujer.png" style="width: 100%" onclick="currentSlide(4)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Baja%20California%20Sur%20-%20Hombre.png" style="width: 100%" onclick="currentSlide(5)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Baja%20California%20Sur%20-%20Mujer.png" style="width: 100%" onclick="currentSlide(6)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Campeche%20-%20Hombre.png" style="width: 100%" onclick="currentSlide(7)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Campeche%20-%20Mujer.png" style="width: 100%" onclick="currentSlide(8)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Chiapas%20-%20Hombre.png" style="width: 100%" onclick="currentSlide(9)" alt="Baja California Hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Chiapas%20-%20Mujer.png" style="width: 100%" onclick="currentSlide(10)" alt="Baja California Hombre">
                 </div>
             </div>
         </div>

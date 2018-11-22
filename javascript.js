@@ -1,7 +1,61 @@
 /*************************************************/
+//Esto ayuda a mostrar informacion diferente en la misma pagina
+
+//var estadoActual;
+
+/*function onload(){
+    document.getElementById("nombreEstado").innerHTML = estadoActual;
+    
+    HTMLDocument.apply
+}*/
+
+function change(change){
+    var estados = [
+        "Todos los artículos",      //00
+        "Aguascalientes",           //01
+        "Baja California Norte",    //02
+        "Baja California Sur",      //03
+        "Campeche",                 //04
+        "Coahuila",                 //05
+        "Colima",                   //06
+        "Chiapas",                  //07
+        "Chihuahua",                //08
+        "Distrito Federal",         //09
+        "Durango",                  //10
+        "Guanajuato",               //11
+        "Guerrero",                 //12
+        "Hidalgo",                  //13
+        "Jalisco",                  //14
+        "México",                   //15
+        "Michoacán",                //16
+        "Morelos",                  //17
+        "Nayarit",                  //18
+        "Nuevo León",               //19
+        "Oaxaca",                   //20
+        "Puebla",                   //21
+        "Querétaro",                //22
+        "Quintana Roo",             //23
+        "San Luis Potosí",          //24
+        "Sinaloa",                  //25
+        "Sonora",                   //26
+        "Tabasco",                  //27
+        "Tamaulipas",               //28
+        "Tlaxcala",                 //29
+        "Veracruz",                 //30
+        "Yucatán",                  //31
+        "Zacatecas",                //32
+        "Artículos varios"          //33
+    ]
+    
+    estadoActual = estados[change];
+    document.getElementById("nombreEstado").innerHTML = estadoActual;
+    
+}
+
+/*************************************************/
 //Galeria
 
-var slideIndex = 1;
+var slideIndex = 0;
 showSlides(slideIndex);
 
 
@@ -33,13 +87,18 @@ function showSlides(n){
 
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    //captionText.innerHTML = dots[slideIndex-1].alt;
     
     var text;
     switch(n){
+        //Default Inicio
+        case 0:
+            text = "Selecciona un artículo";
+        break;
+            
         //Imagen 1
         case 1: 
-            text = showPrice(4) + "Incluye: <br>" + showElements(1);
+            text = showPrice(5) + "Incluye: <br>" + showElements(1);
         break;
         
         //Imagen 2
@@ -51,8 +110,48 @@ function showSlides(n){
         case 3:
             text = showPrice(4) + "Incluye: <br>" + showElements(3);
         break;
+        
+        //Imagen 4
+        case 4:
+            text = showPrice(4) + "Incluye: <br>" + showElements(2);
+        break;
+            
+        //Imagen 5
+        case 5:
+            text = showPrice(5) + "Incluye: <br>" + showElements(1);
+        break;
+            
+        //Imagen 6
+        case 6:
+            text = showPrice(5) + "Incluye: <br>" + showElements(2);
+        break;
+        
+        //Imagen 7
+        case 7:
+            text = showPrice(4) + "Incluye: <br>" + showElements(1);
+        break;
+            
+        //Imagen 8
+        case 8:
+            text = showPrice(4) + "Incluye: <br>" + showElements(2);
+        break;
+            
+        //Imagen 9
+        case 9:
+            text = showPrice(4) + "Incluye: <br>" + showElements(1);
+        break;
+            
+        //Imagen 10
+        case 10:
+            text = showPrice(6) + "Incluye: <br>" + showElements(2);
+        break;
+            
+        case 12:
+            text = showPrice(1);
+        break;
     }
     document.getElementById("textoResultado").innerHTML = text;
+    document.getElementById("informacion").style.opacity = 1; 
 }
 
 /*************************************************/
@@ -159,30 +258,8 @@ function showElements(n){
 }
 
 /*************************************************/
-//Esto ayuda a mostrar informacion diferente en la misma pagina
-
-
-/*************************************************/
 //Transparencia de la informacion
 
-function transparencia(){
-    
-    if(document.getElementById("informacion").style.opacity.value == 1){
-        document.getElementById("informacion").style.opacity = 0.3;
-    }
-    
-    
-    /*
-    if(esTransparente){
-        document.getElementById("informacion").style.opacity = 0.3;
-        esTransparente = true;
-    }else{
-        document.getElementById("informacion").style.opacity = 1;
-        esTransparente = false;
-    }*/
-    
-    
-    
-    
-    
+function transparencia(){ 
+    document.getElementById("informacion").style.opacity = 0.3;    
 }
