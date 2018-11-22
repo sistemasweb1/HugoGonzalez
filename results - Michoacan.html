@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+        
+        <title>Renta de vestuario</title>
+    </head>
+    
+    <body onload="change(16)">
+        
+        <nav>
+            <ul id="lista">
+            <li class="item"><a href="index.html" class="textolista">Inicio</a></li>
+            <li class="item"><a href="contact.html" class="textolista">Contacto</a></li>
+            <li class="item"><a href="about.html" class="textolista">Acerca</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="cabecera">
+            <div class="alineacion">
+                <img src="images/logo.png" class="logo" alt ="logo" ><br>
+            </div>
+            <h2>Renta de vestuario folklórico</h2>
+        </div>
+        
+        <!-- Container for the image gallery -->
+        <div class="container">
+            
+            <!-- Nombre del estado -->
+            <h2 id="nombreEstado">Texto</h2>
+            
+            <!-- Full-width images with numer text -->
+            <div>
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Michoacan%20-%20Hombre.gif" style="width: 100%">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="mySlides">
+                    <img src="images/Michoacan%20-%20Mujer.png" style="width: 100%">
+                </div>
+                
+            </div>
+            
+            <!-- Informacion del vestuario -->
+            <div id="informacion" class="text-block" onclick="transparencia()">
+                <h3 id="caption">Información</h3>
+                <p id="textoResultado"></p>
+            </div>   
+            
+            <!-- Image text -->
+            <div class="caption-container">
+                <br>
+            </div>
+            
+            <!-- Thumbnail images -->
+            <!-- Tiene que haber la misma cantidad de imagenes que de Tumbnails -->
+            <div class="row">
+                <!-- Imagen -->
+                <div class="column">
+                    <img class="demo cursor" src="images/Michoacan%20-%20Hombre.gif" style="width: 100%" onclick="currentSlide(1)" alt="Aguascalientes hombre">
+                </div>
+                
+                <!-- Imagen -->
+                <div class="column">
+                   <img class="demo cursor" src="images/Michoacan%20-%20Mujer.png" style="width: 100%" onclick="currentSlide(2)" alt="Aguascalientes Mujer">
+                </div>
+                
+            </div>
+        </div>
+        
+        <footer>
+            <a href="https://www.facebook.com/RentaDeVestuarioFolklorico/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCeyy0UKV_aEeB0kkNUC0pow" class="fa fa-youtube" target="_blank"></a>
+            <br><br>
+            
+            <div class="foot">Renta de vestuario folklórico "Tía Irma" &copy 2018 </div>
+            <br>
+        </footer>
+        
+        <script src="javascript.js"></script>
+        
+    </body>
+</html>
