@@ -26,7 +26,7 @@ function change(change){
         "Guerrero",                 //12
         "Hidalgo",                  //13
         "Jalisco",                  //14
-        "México",                   //15
+        "Estado de México",         //15
         "Michoacán",                //16
         "Morelos",                  //17
         "Nayarit",                  //18
